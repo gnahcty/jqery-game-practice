@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    font-family: 'Darumadrop One', cursive;
+}
+
+#scorebar {
+    height: 56px;
+}
+
+p {
+    display: inline-block;
+    margin-right: 3rem;
+}
+
+#rules {
+    box-sizing: border-box;
+    padding: 16px;
+    width: 400px;
+    height: 350px;
+    background-color: #888;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* display: none; */
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#rules img {
+    height: 125px;
+    margin-bottom: 0px;
+}
+
+/* h3 {
+    margin: 0px;
+} */
+
+#description {
+    height: 125px;
+    width: 700px;
+    /* background-color: #000; */
+    transform: translateX(11%);
+    transition: 0.5s;
+}
+
+#description span {
+    display: inline-block;
+    font-size: 3rem;
+    font-family: 'Darumadrop One', cursive;
+}
+
+#description span:hover {
+    color: #ddd;
+    cursor: pointer;
+}
+
+#arr1 {
+    position: absolute;
+    top: 32px;
+    left: 249px;
+}
+
+#arr2 {
+    position: absolute;
+    top: 39px;
+    right: 277px;
+}
+
+#catfish {
+    float: left;
+}
+
+#shovepoo {
+    float: right;
+}
+
+.letters {
+    height: 300px;
+    width: 300px;
+    font-family: 'Darumadrop One', cursive;
+    text-align: center;
+    font-size: 0rem;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 150px);
+    /* background-color: #aaa; */
+}
+
+#btn-start {
+    margin: 0;
+    padding: 5px 15px;
+    font-family: 'Darumadrop One', cursive;
+    border: none;
+    border-radius: 5px;
+    clear: both;
+    display: block;
+    margin: auto;
+}
+
+#btn-start:hover {
+    background-color: #666;
+    color: #fff;
+}
+
+#game {
+    width: calc(100vw - 110px);
+    height: calc(100vh - 56px);
+    /* background: black; */
+    overflow: hidden;
+    position: relative;
+    float: left;
+}
+
+.fishCursor {
+    cursor: url(./assets/fish.png) 50 50, auto;
+}
+
+.scoopCursor {
+    cursor: url(./assets/picker.png) 50 50, auto;
+}
+
+#game img {
+    user-select: none;
+    -webkit-user-drag: none;
+    height: 150px;
+}
+
+.cat {
+    height: 150px;
+    position: absolute;
+}
+
+.poo {
+    position: absolute;
+    height: 150px;
+}
+
+.err {
+    position: absolute;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+#btnbox {
+    width: 100px;
+    height: 200px;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+#fishbtn {
+    width: 100px;
+    height: 100px;
+}
+
+#scoopbtn {
+    width: 100px;
+    height: 100px;
+}
+
+#fishbtn:hover,
+#scoopbtn:hover {
+    background-color: #ddd;
+    border-radius: 15px;
+}
+
+.rainbow {
+    animation: rainbow 1s linear 0s infinite normal both;
+}
+
+@keyframes rainbow {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        filter: hue-rotate(180deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#bgtext {
+    width: 100vw;
+    height: 100vh;
+    line-height: 100vh;
+    position: absolute;
+    top: calc(50% - 50vh);
+    left: calc(50% -50vw);
+    text-align: center;
+    font-size: 300px;
+    z-index: -1;
+    display: none;
+    color: #aaa;
+}
+
+.noDisplay {
+    display: none;
+}
